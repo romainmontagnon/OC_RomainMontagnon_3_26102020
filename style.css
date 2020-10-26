@@ -36,6 +36,11 @@ h1{
   margin: 0rem;
 }
 
+h2{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 .location{
   height: 3.125rem;
   font-size: 0.75rem;
@@ -60,8 +65,6 @@ h1{
 }
 
 .explain > h2{
-  font-size: 1.125rem;
-  font-weight: 500;
   text-align: center;
   margin: 0 4.063rem;
 }
@@ -81,16 +84,74 @@ h1{
 .explore > a{
   border-radius: 1.25rem;
   font-size: 0.75rem;
-  font-weight: 500;
   color: #fff;
-  /* background-color: linear-gradient(180deg, #9356dc, #ff79da); */
-  /* background-color: #9356dc; */
   background: linear-gradient(180deg, #ff79da,  #9356dc);
+  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
 }
 
 .explore > a p{
   font-size: 0.75rem;
   margin: 1.25em 1.438rem;
+  font-weight: 500;
+}
+
+.fonctionnement{
+  margin: 3.25rem 1.25rem 4.25rem 1.25rem;
+}
+
+.fonctionnement > h2{
+  margin-bottom: 0.625rem;
+}
+
+.fonctionnement_details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.813rem;
+  font-weight: 500rem;
+  margin-top: 1.25rem;
+}
+
+#ico_phone, #ico_list, #ico_store{
+  font-size: 1.313rem;
+  margin-left: 1.375rem;
+  margin-right: 1.688rem;
+}
+
+#ico_phone, #ico_list{
+  color: #707070;
+}
+
+#ico_store{
+  color: #9356dc;
+}
+
+.fonctionnement_border{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#f6f6f6;
+  border-radius: 25rem;
+  width: 100%;
+  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+  margin-left: -0.75rem;
+}
+
+.fonctionnement_number{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  color: #fff;
+}
+
+.fonctionnement_texte{
+  font-size: 0.813rem;
+  font-weight: 500rem;
 }
 
 /*
