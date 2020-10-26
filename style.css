@@ -1,5 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap");
-.logo {
-  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+/* Set et Reset CSS */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
+
+/*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Shrikhand', cursive;
+  font weight Roboto : 100, 300, 400
+*/
+p{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
+/* Header */
+/* Div Logo */
+.logo{
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  font-size: 1.063rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.location{
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* Degradé lineaire selon une droite horizontale, qui laisse 0.01 rem pour la couleurnla plus sombre (en haut de la box) et le reste pour la couleur la plus claire */
+  background: linear-gradient(180deg, #aaaaaa, 0.01rem, #eaeaea);  
+}
+
+.location > p{
+  margin-left: 1.125rem;
+}
+
+/*
+  Media querries
+*/
+/* Mobile Phone */
+@media screen and (max-width: 768px){
+  .logo{
+    color: burlywood;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+  .logo {
+    color: red;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+  .logo {
+    color: green;
+  }
+}

@@ -1,0 +1,13 @@
+.logo{
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+    font-size: 1.063rem;
+    @media screen and (max-width: 768px){
+      color: burlywood;
+    }
+    @media screen (min-width: 768px) and (max-width: 1024px){
+      color: red;
+    }
+    @media screen and (min-width: 1024px){
+      color: green;
+    }
+  }
