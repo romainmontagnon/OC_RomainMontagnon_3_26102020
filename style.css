@@ -147,6 +147,7 @@ h2{
   align-items: center;
   font-size: 0.625rem;
   color: #fff;
+  z-index: 100;
 }
 
 .fonctionnement_texte{

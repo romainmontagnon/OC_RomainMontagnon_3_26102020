@@ -1,13 +1,179 @@
+/* Set et Reset CSS */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
+
+/*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Shrikhand', cursive;
+  font weight Roboto : 100, 300, 400, 500
+*/
+p, h2{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+}
+/* Header */
+/* Div Logo */
 .logo{
-    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
-    font-size: 1.063rem;
-    @media screen and (max-width: 768px){
-      color: burlywood;
-    }
-    @media screen (min-width: 768px) and (max-width: 1024px){
-      color: red;
-    }
-    @media screen and (min-width: 1024px){
-      color: green;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0rem;
+  padding-top: 1.438rem;
+  padding-bottom: 0.375rem;
+}
+
+h1{
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  font-size: 1.438rem;
+  margin: 0rem;
+}
+
+h2{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.location{
+  height: 3.125rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* Degradé lineaire selon une droite horizontale, qui laisse 0.01 rem pour la couleurnla plus sombre (en haut de la box) et le reste pour la couleur la plus claire */
+  background: linear-gradient(180deg, #aaaaaa, 0.01rem, #eaeaea);  
+}
+
+.location > p{
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0rem 0rem 0rem 1.125rem;
+}
+
+.explain{
+  background-color: #f6f6f6;
+  padding-top: 2.75rem;
+  padding-bottom: 3.563rem;
+}
+
+.explain > h2{
+  text-align: center;
+  margin: 0 4.063rem;
+}
+
+.explain > p{
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 1.25rem 2.5rem 2.5rem 1.938rem;
+}
+
+.explore{
+  display: flex;
+  justify-content: center;
   }
+
+.explore > a{
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
+  color: #fff;
+  background: linear-gradient(180deg, #ff79da,  #9356dc);
+  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+}
+
+.explore > a p{
+  font-size: 0.75rem;
+  margin: 1.25em 1.438rem;
+  font-weight: 500;
+}
+
+.fonctionnement{
+  margin: 3.25rem 1.25rem 4.25rem 1.25rem;
+}
+
+.fonctionnement > h2{
+  margin-bottom: 0.625rem;
+}
+
+.fonctionnement_details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.813rem;
+  font-weight: 500rem;
+  margin-top: 1.25rem;
+}
+
+#ico_phone, #ico_list, #ico_store{
+  font-size: 1.313rem;
+  margin-left: 1.375rem;
+  margin-right: 1.688rem;
+}
+
+#ico_phone, #ico_list{
+  color: #707070;
+}
+
+#ico_store{
+  color: #9356dc;
+}
+
+.fonctionnement_border{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#f6f6f6;
+  border-radius: 25rem;
+  width: 100%;
+  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+  margin-left: -0.75rem;
+}
+
+.fonctionnement_number{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  color: #fff;
+}
+
+.fonctionnement_texte{
+  font-size: 0.813rem;
+  font-weight: 500rem;
+}
+
+/*
+  Media querries
+*/
+/* Mobile Phone */
+@media screen and (max-width: 768px){
+  .logo{
+    color: burlywood;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+  .logo {
+    color: red;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+  .logo {
+    color: green;
+  }
+}
