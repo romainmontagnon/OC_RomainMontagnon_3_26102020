@@ -103,10 +103,14 @@ $color-shadow-gray: #aaaaaa;
     }
   }
 }
-
+.main__margin{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .fonctionnement{
-  margin: 3.25rem 1.25rem 4.25rem 1.25rem;
-
+  margin-top: 3.25rem;
+  margin-bottom: 4.45rem;
+  // margin: 3.25rem 1.25rem 4.25rem 1.25rem;
   h2{
     margin-bottom: 0.625rem;
   }
@@ -155,18 +159,26 @@ $color-shadow-gray: #aaaaaa;
   }
 }
 
+nav{
+  background-color: $color-medium-gray;
+}
+
 /*
   Media querries
 */
 /* Mobile Phone */
 @media screen and (max-width: 768px){
   .logo{
-    color: burlywood;
+    color: #000;
   }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px){
+  body{
+    width: 768px;
+    margin: auto;
+  }
   .logo {
     color: red;
   }
@@ -174,6 +186,10 @@ $color-shadow-gray: #aaaaaa;
 
 /* Desktop */
 @media screen and (min-width: 1024px){
+  body{
+    width: 1024px;
+    margin: auto;
+  }
   .logo {
     color: green;
   }
