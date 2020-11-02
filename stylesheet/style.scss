@@ -19,6 +19,21 @@ a{
 body{
   margin: 0;
 }
+
+// Colors
+$color-first:#9356dc;
+$color-second: #ff79da;
+$color-third: #99e2d0;
+
+$color-footer: #353535;
+$color-fonctionnement: #f6edfe;
+
+$color-light-gray: #eaeaea;
+$color-medium-gray: #f6f6f6;
+$color-dark-gray: #707070;
+$color-shadow-gray: #aaaaaa;
+
+
 /* Header */
 /* Div Logo */
 .logo{
@@ -49,7 +64,7 @@ h2{
   justify-content: center;
   align-items: center;
   /* Degradé lineaire selon une droite horizontale, qui laisse 0.01 rem pour la couleurnla plus sombre (en haut de la box) et le reste pour la couleur la plus claire */
-  background: linear-gradient(180deg, #aaaaaa, 0.01rem, #eaeaea);  
+  background: linear-gradient(180deg,$color-shadow-gray, 0.01rem, $color-light-gray);  
 }
 
 .location > p{
@@ -59,7 +74,7 @@ h2{
 }
 
 .explain{
-  background-color: #f6f6f6;
+  background-color: $color-medium-gray;
   padding-top: 2.75rem;
   padding-bottom: 3.563rem;
 }
@@ -85,8 +100,8 @@ h2{
   border-radius: 1.25rem;
   font-size: 0.75rem;
   color: #fff;
-  background: linear-gradient(180deg, #ff79da,  #9356dc);
-  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+  background: linear-gradient(180deg, $color-second,  $color-first);
+  box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
 }
 
 .explore > a p{
@@ -112,28 +127,25 @@ h2{
   margin-top: 1.25rem;
 }
 
-#ico_phone, #ico_list, #ico_store{
+.icon{
   font-size: 1.313rem;
   margin-left: 1.375rem;
   margin-right: 1.688rem;
+  color: $color-dark-gray;
+  &--color-first{
+    color: $color-first;
+  }
 }
 
-#ico_phone, #ico_list{
-  color: #707070;
-}
-
-#ico_store{
-  color: #9356dc;
-}
 
 .fonctionnement_border{
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color:#f6f6f6;
+  background-color:$color-medium-gray;
   border-radius: 25rem;
   width: 100%;
-  box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+  box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
   margin-left: -0.75rem;
 }
 
@@ -141,7 +153,7 @@ h2{
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100%;
-  background-color: #9356dc;
+  background-color: $color-first;
   display: flex;
   justify-content: center;
   align-items: center;

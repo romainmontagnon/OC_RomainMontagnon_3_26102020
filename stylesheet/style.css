@@ -142,17 +142,14 @@ h2 {
   margin-top: 1.25rem;
 }
 
-#ico_phone, #ico_list, #ico_store {
+.icon {
   font-size: 1.313rem;
   margin-left: 1.375rem;
   margin-right: 1.688rem;
-}
-
-#ico_phone, #ico_list {
   color: #707070;
 }
 
-#ico_store {
+.icon--color-first {
   color: #9356dc;
 }
 
@@ -221,4 +218,4 @@ h2 {
     color: green;
   }
 }
-/*# sourceMappingURL=style_anim.css.map */
+/*# sourceMappingURL=style.css.map */
