@@ -24,6 +24,148 @@ body {
   margin: 0;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: #f6f6f6;
+  }
+  50% {
+    color: #707070;
+  }
+  100% {
+    color: #f6f6f6;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #f6f6f6;
+  }
+  50% {
+    color: #707070;
+  }
+  100% {
+    color: #f6f6f6;
+  }
+}
+
+@-webkit-keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  -webkit-animation: fade_out 2s ease-in 1s forwards;
+          animation: fade_out 2s ease-in 1s forwards;
+}
+
+.loader__spinner {
+  border: 1rem solid #f6f6f6;
+  border-top: 1rem solid #707070;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.loader__ico {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: #353535;
+  -webkit-animation: color 3s ease-in-out infinite;
+          animation: color 3s ease-in-out infinite;
+}
+
+.main_container {
+  opacity: 0;
+  -webkit-animation: fade_in 1s ease-in 3s forwards;
+          animation: fade_in 1s ease-in 3s forwards;
+}
+
 /* Header */
 /* Div Logo */
 .logo {

@@ -38,6 +38,96 @@ $color-medium-gray: #f6f6f6;
 $color-dark-gray: #707070;
 $color-shadow-gray: #aaaaaa;
 
+// Size
+$size-border:1rem;
+$size-loader:3rem;
+
+// Keyframes
+@keyframes spin{
+  0%{
+      transform: rotate(0turn);
+  }
+  100%{
+      transform: rotate(1turn);
+  }
+}
+
+@keyframes color {
+  0%{
+      color: $color-medium-gray;
+  }
+  50%{
+      color: $color-dark-gray;  
+  }
+  100%{
+      color: $color-medium-gray;
+  }
+}
+
+@keyframes fade_out{
+  0%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0.5;
+  }
+  100%{
+      opacity: 0;
+      display: none;
+  }
+}
+
+@keyframes fade_in{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.5;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+//Loading Spinner
+.loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $size-loader*4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    animation: fade_out 2s ease-in 1s forwards;
+}
+
+.loader__spinner{
+    border: $size-border solid $color-medium-gray;
+    border-top: $size-border solid $color-dark-gray;
+    border-radius: 50%;
+    width: $size-loader;
+    height: $size-loader;
+    animation: spin 1s linear infinite;
+}
+
+.loader__ico{
+    font-size: $size-loader/1.5;
+    padding-top: $size-border;
+    color: $color-footer;
+    animation: color 3s ease-in-out infinite;
+}
+
+.main_container{
+    opacity: 0;
+    animation: fade_in 1s ease-in 3s forwards;
+}
+
+
+
 
 /* Header */
 /* Div Logo */
