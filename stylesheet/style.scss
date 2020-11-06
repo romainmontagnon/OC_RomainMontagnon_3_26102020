@@ -29,6 +29,7 @@ body{
 $color-first:#9356dc;
 $color-second: #ff79da;
 $color-third: #99e2d0;
+$color-second-light: #f6edfe;
 
 $color-footer: #353535;
 $color-fonctionnement: #f6edfe;
@@ -124,9 +125,6 @@ main{
     animation: fade_in 1s ease-in 3s forwards;
 }
 
-
-
-
 /* Header */
 /* Div Logo */
 .logo{
@@ -219,6 +217,9 @@ main{
     width: 100%;
     box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
     margin-left: -0.75rem;
+    &--color{
+      background-color: $color-second-light;
+    }
   }
   &__number{
     height: 1.5rem;
@@ -230,6 +231,7 @@ main{
     align-items: center;
     font-size: 0.625rem;
     color: #fff;
+    z-index: 100;
   }
   &__texte{
     font-size: 0.813rem;
@@ -242,6 +244,7 @@ main{
   margin-left: 1.375rem;
   margin-right: 1.688rem;
   color: $color-dark-gray;
+  z-index: 100;
   &--color-first{
     color: $color-first;
   }

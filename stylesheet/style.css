@@ -309,6 +309,10 @@ main {
   margin-left: -0.75rem;
 }
 
+.fonctionnement__border--color {
+  background-color: #f6edfe;
+}
+
 .fonctionnement__number {
   height: 1.5rem;
   width: 1.5rem;
@@ -325,6 +329,7 @@ main {
           align-items: center;
   font-size: 0.625rem;
   color: #fff;
+  z-index: 100;
 }
 
 .fonctionnement__texte {
@@ -337,6 +342,7 @@ main {
   margin-left: 1.375rem;
   margin-right: 1.688rem;
   color: #707070;
+  z-index: 100;
 }
 
 .icon--color-first {
