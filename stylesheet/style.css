@@ -435,10 +435,69 @@ nav {
           flex-direction: column;
 }
 
-.icon__restaurants {
+.icon__restaurants--empty {
   padding-right: 1.5rem;
   font-size: 1.375rem;
   cursor: copy;
+}
+
+.icon__restaurants--full {
+  padding-right: 1.5rem;
+  font-size: 1.375rem;
+  opacity: 0;
+  cursor: copy;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkbox:hover + label {
+  color: #9356dc;
+}
+
+.checkbox:hover + label .icon__restaurants--empty {
+  opacity: 0;
+}
+
+.checkbox:hover + label .icon__restaurants--full {
+  opacity: 1;
+}
+
+.checkbox:checked + label {
+  color: #ff79da;
+}
+
+.checkbox:checked + label .icon__restaurants--empty {
+  opacity: 0;
+}
+
+.checkbox:checked + label .icon__restaurants--full {
+  opacity: 1;
+}
+
+.checkbox:active + label {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.checkmark {
+  cursor: copy;
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*
