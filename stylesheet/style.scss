@@ -103,25 +103,23 @@ $size-loader:3rem;
     margin-right: auto;
     opacity: 1;
     animation: fade_out 2s ease-in 1s forwards;
-}
-
-.loader__spinner{
-    border: $size-border solid $color-medium-gray;
-    border-top: $size-border solid $color-dark-gray;
-    border-radius: 50%;
-    width: $size-loader;
-    height: $size-loader;
-    animation: spin 1s linear infinite;
-}
-
-.loader__ico{
+    &__spinner{
+      border: $size-border solid $color-medium-gray;
+      border-top: $size-border solid $color-dark-gray;
+      border-radius: 50%;
+      width: $size-loader;
+      height: $size-loader;
+      animation: spin 1s linear infinite;
+  }
+  &__ico{
     font-size: $size-loader/1.5;
     padding-top: $size-border;
     color: $color-footer;
     animation: color 3s ease-in-out infinite;
 }
+}
 
-.main_container{
+main{
     opacity: 0;
     animation: fade_in 1s ease-in 3s forwards;
 }

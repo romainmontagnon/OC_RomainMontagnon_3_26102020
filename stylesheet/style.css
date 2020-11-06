@@ -160,7 +160,7 @@ body {
           animation: color 3s ease-in-out infinite;
 }
 
-.main_container {
+main {
   opacity: 0;
   -webkit-animation: fade_in 1s ease-in 3s forwards;
           animation: fade_in 1s ease-in 3s forwards;
