@@ -22,6 +22,11 @@ h3{
   font-weight: 500;
 }
 
+h4{
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+
 a{
   text-decoration: none;
   &:visited{
@@ -111,7 +116,7 @@ $size-loader:3rem;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-    animation: fade_out 500ms ease-in 500ms forwards;
+    animation: fade_out 1s ease-in 1s forwards;
     &__spinner{
       border: $size-border solid $color-medium-gray;
       border-top: $size-border solid $color-dark-gray;
@@ -130,7 +135,7 @@ $size-loader:3rem;
 
 main{
     opacity: 0;
-    animation: fade_in 500ms ease-in forwards;
+    animation: fade_in 1s 2s ease-in forwards;
 }
 
 /* Header */
@@ -267,6 +272,11 @@ main{
 
 nav{
   background-color: $color-medium-gray;
+  padding-bottom: 2.875rem;
+  h2{
+    padding-top: 3.75rem;
+    margin-bottom: 1.688rem;
+  }
 }
 
 .restaurants{
@@ -280,6 +290,7 @@ nav{
   height: 15.625rem;
   background-color: #fff;
   border-radius: 1.25rem;
+  margin-bottom: 1.125rem;
 }
 
 .restaurants__img{
@@ -369,6 +380,39 @@ nav{
   flex-direction: row;
   align-items: center;
 }
+
+//Footer
+footer{
+  background-color: $color-footer;
+  color: #fff;
+  padding-bottom: 2.375rem;
+  > h4{
+    color: #fff;
+    margin: 0rem 0rem 1.688rem 1.583rem;
+    padding-top: 1.688rem;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    &:visited{
+    text-decoration: none;
+    color: #fff;
+    }
+  }
+  div{
+    margin-left: 1.563rem;
+    margin-bottom: 0.875rem;
+    font-size: 0.813rem;
+  }
+}
+
+.footer__icon{
+  padding-right: 0.75rem;
+  &--position{
+    margin-right: 0.438rem;
+  }
+}
+
 /*
   Media querries
 */

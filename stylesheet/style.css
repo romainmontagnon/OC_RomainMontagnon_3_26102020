@@ -21,6 +21,11 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -147,8 +152,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   opacity: 1;
-  -webkit-animation: fade_out 500ms ease-in 500ms forwards;
-          animation: fade_out 500ms ease-in 500ms forwards;
+  -webkit-animation: fade_out 1s ease-in 1s forwards;
+          animation: fade_out 1s ease-in 1s forwards;
 }
 
 .loader__spinner {
@@ -171,8 +176,8 @@ body {
 
 main {
   opacity: 0;
-  -webkit-animation: fade_in 500ms ease-in forwards;
-          animation: fade_in 500ms ease-in forwards;
+  -webkit-animation: fade_in 1s 2s ease-in forwards;
+          animation: fade_in 1s 2s ease-in forwards;
 }
 
 /* Header */
@@ -360,6 +365,12 @@ main {
 
 nav {
   background-color: #f6f6f6;
+  padding-bottom: 2.875rem;
+}
+
+nav h2 {
+  padding-top: 3.75rem;
+  margin-bottom: 1.688rem;
 }
 
 .restaurants {
@@ -380,6 +391,7 @@ nav {
   height: 15.625rem;
   background-color: #fff;
   border-radius: 1.25rem;
+  margin-bottom: 1.125rem;
 }
 
 .restaurants__img {
@@ -501,6 +513,42 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 2.375rem;
+}
+
+footer > h4 {
+  color: #fff;
+  margin: 0rem 0rem 1.688rem 1.583rem;
+  padding-top: 1.688rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer div {
+  margin-left: 1.563rem;
+  margin-bottom: 0.875rem;
+  font-size: 0.813rem;
+}
+
+.footer__icon {
+  padding-right: 0.75rem;
+}
+
+.footer__icon--position {
+  margin-right: 0.438rem;
 }
 
 /*
