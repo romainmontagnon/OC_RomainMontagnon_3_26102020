@@ -133,7 +133,7 @@ $size-loader:3rem;
 }
 }
 
-main{
+.main__fade-in{
     opacity: 0;
     animation: fade_in 1s 2s ease-in forwards;
 }
@@ -151,6 +151,7 @@ main{
     font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
     font-size: 1.438rem;
     margin: 0rem;
+    color: #000;
   }
 }
 
