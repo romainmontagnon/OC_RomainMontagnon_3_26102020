@@ -193,16 +193,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0rem;
   padding-top: 1.438rem;
   padding-bottom: 0.375rem;
+  color: #000;
 }
 
 .logo h1 {
   font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
   font-size: 1.438rem;
   margin: 0rem;
-  color: #000;
+}
+
+.logo__grid--title {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.logo__grid--icon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding-right: 70%;
+}
+
+.logo__restaurants {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .location {
@@ -278,6 +301,74 @@ body {
 .main__margin {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.carte {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 13.75rem 2.5rem 1fr;
+      grid-template-rows: 13.75rem 2.5rem 1fr;
+}
+
+.carte__header {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  overflow: hidden;
+}
+
+.carte__header--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+}
+
+.carte__menu {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 3;
+      grid-row-end: span 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f6f6f6;
+  border-radius: 1.875rem 1.875rem 0rem 0rem;
+}
+
+.carte__menu--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2.188rem 0rem 2.75rem 0rem;
+}
+
+.carte__menu--title h2 {
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  margin: 0rem 0rem;
+}
+
+.carte__menu--header_list {
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.carte__menu--header_line {
+  margin: 0.563rem 0rem 0.875rem 0rem;
+  width: 2.5rem;
+  border-bottom: #99e2d0 solid 0.188rem;
 }
 
 .fonctionnement {
@@ -536,6 +627,10 @@ footer a {
 footer a:visited {
   text-decoration: none;
   color: #fff;
+}
+
+footer a p {
+  display: inline;
 }
 
 footer div {

@@ -13,17 +13,53 @@
     <body>
         <main>
             <header>
-                <a href="index.html" class="logo">
-                    <span>
+                <a href="index.html" class="logo__restaurants">
+                    <span class="logo logo__grid--icon">
                         <i class="fas fa-arrow-left"></i>
                     </span>
-                    <h1>ohmyfood</h1>
+                    <span class="logo logo__grid--title">
+                        <h1>ohmyfood</h1>
+                    </span>
                 </a>
-                <!-- <div>
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_small.jpg">
-                </div> -->
             </header>
-            <section>
+            <section class="carte">
+                <div class="carte__header">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurants_image" class="carte__header--img">
+                </div>
+                <div class="carte__menu">
+                    <div class=" main__margin">
+                        <div class="carte__menu--title">
+                            <h2>Nom du restaurant</h2>
+                            <div class="icon icon__restaurants icon__restaurants--color">
+                                <form method="post" name="#">
+                                    <input type="checkbox" name="delice" id="delice" class="checkbox">
+                                    <label for="delice" class="checkmark">
+                                        <span class="icon__restaurants--empty">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                        <span class="icon__restaurants--full">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carte__menu--list">
+                                <p class="carte__menu--header_list">Entrées</p>
+                                <div class="carte__menu--header_line"></div>
+                            </div>
+                            <div class="carte__menu--list">
+                                <p class="carte__menu--header_list">Plats</p>
+                                <div class="carte__menu--header_line"></div>
+                            </div>
+                            <div class="carte__menu--list">
+                                <p class="carte__menu--header_list">Desserts</p>
+                                <div class="carte__menu--header_line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
             <footer>
@@ -33,7 +69,7 @@
                         <span class="footer__icon footer__icon--position">
                             <i class="fas fa-utensils"></i>
                         </span>
-                        <span>Proposer un restaurant</span>
+                        <p>Proposer un restaurant</p>
                     </a>
                 </div>
                 <div>
@@ -41,14 +77,14 @@
                         <span class="footer__icon">
                             <i class="fas fa-hands-helping"></i>
                         </span>
-                        <span>Devenir partenaire</span>
+                        <p>Devenir partenaire</p>
                     </a>
                 </div>
                 <div>
-                    <a href="#">Mentions légales</a>
+                    <a href="#"><p>Mentions légales</p></a>
                 </div>
                 <div>
-                    <a href="mailto:contact@ohmyfood.eat">Contact</a>
+                    <a href="mailto:contact@ohmyfood.eat"><p>Contact</p></a>
                 </div>
             </footer>
         </main>
