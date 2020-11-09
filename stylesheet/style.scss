@@ -52,6 +52,9 @@ $color-medium-gray: #f6f6f6;
 $color-dark-gray: #707070;
 $color-shadow-gray: #aaaaaa;
 
+$color-price: #353535;
+$color-plate-description:#202020;
+
 // Size
 $size-border:1rem;
 $size-loader:3rem;
@@ -266,7 +269,83 @@ $size-loader:3rem;
       width: 2.5rem;
       border-bottom: $color-third solid 0.188rem;
     }
-   
+  }
+}
+
+.carte__plate{
+  border-radius: 0.813rem;
+  background-color: #fff;
+  padding-left: 0.625rem;
+  margin-bottom: 0.875rem;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: 2.188rem 2.188rem;
+  
+  &--title{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  &--description{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    font-size: 0.688rem;
+    color: $color-plate-description;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  &--price{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: 0.688rem;
+    font-weight: 500;
+    color: $color-price;
+    margin: 0rem 0rem 1rem 0rem;
+    padding-right: 0.625rem;
+    text-align: right;
+    }
+  &--selector{
+    // display: none;
+    grid-row-start: 1;
+    grid-row-end: span 2 ;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $color-third;
+    color: #fff;
+    font-size: 1.75rem;
+    border-radius: 0rem 0.813rem 0.813rem 0rem;
+    transform: scale(0);
+    //transform-origin: center right;
+  }
+  &:hover > &--selector{
+    animation: apparition 5s ease-in-out forwards;
+    >i{
+     animation: spin 1s ease-in forwards;
+    }
+  }
+}
+
+@keyframes apparition{
+  0%{
+    transform-origin: center right;
+    transform: scale(0);
+    transform: translateX(0);
+  }
+  50%{
+    transform-origin: center right;
+    transform: scale(1);
+    transform: translateX(0.5);
+  }
+  100%{
+    transform-origin: center right;
+    transform: scale(1);
+    transform: translateX(1);
   }
 }
 
