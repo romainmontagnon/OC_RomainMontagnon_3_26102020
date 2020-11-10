@@ -89,6 +89,15 @@ $size-loader:3rem;
   }
 }
 
+@keyframes translation{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes color {
   0%{
       color: $color-medium-gray;
@@ -314,6 +323,9 @@ $size-loader:3rem;
     font-size: 0.688rem;
     color: $color-plate-description;
     margin: 0rem 0rem 1rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
   &--price{
     grid-row-start: 2;
@@ -324,6 +336,7 @@ $size-loader:3rem;
     margin: 0rem 0rem 1rem 0rem;
     padding-right: 0.625rem;
     text-align: right;
+    transform: translateX(0%)
     }
   &--selector{
     // display: none;
@@ -346,10 +359,22 @@ $size-loader:3rem;
     transform-origin: center right;
   }
   &:hover > &--selector{
-    animation: apparition 500ms ease-in-out forwards;
+    animation: apparition 300ms ease-in-out forwards;
     >i{
-     animation: spin 500ms ease-in forwards;
+     animation: spin 500ms ease-in-out forwards;
     }
+  }
+  &:hover > &--price{
+    animation: translation 300ms ease-in-out forwards;
+  }
+  &:active > &--selector{
+    animation: apparition 300ms ease-in-out forwards;
+    >i{
+     animation: spin 500ms ease-in-out forwards;
+    }
+  }
+  &:active > &--price{
+    animation: translation 300ms ease-in-out forwards;
   }
 }
 

@@ -108,6 +108,28 @@ body {
   }
 }
 
+@-webkit-keyframes translation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes translation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
 @-webkit-keyframes color {
   0% {
     color: #f6f6f6;
@@ -450,6 +472,12 @@ body {
   font-size: 0.688rem;
   color: #202020;
   margin: 0rem 0rem 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .carte__plate--price {
@@ -463,6 +491,8 @@ body {
   margin: 0rem 0rem 1rem 0rem;
   padding-right: 0.625rem;
   text-align: right;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .carte__plate--selector {
@@ -500,13 +530,33 @@ body {
 }
 
 .carte__plate:hover > .carte__plate--selector {
-  -webkit-animation: apparition 500ms ease-in-out forwards;
-          animation: apparition 500ms ease-in-out forwards;
+  -webkit-animation: apparition 300ms ease-in-out forwards;
+          animation: apparition 300ms ease-in-out forwards;
 }
 
 .carte__plate:hover > .carte__plate--selector > i {
-  -webkit-animation: spin 500ms ease-in forwards;
-          animation: spin 500ms ease-in forwards;
+  -webkit-animation: spin 500ms ease-in-out forwards;
+          animation: spin 500ms ease-in-out forwards;
+}
+
+.carte__plate:hover > .carte__plate--price {
+  -webkit-animation: translation 300ms ease-in-out forwards;
+          animation: translation 300ms ease-in-out forwards;
+}
+
+.carte__plate:active > .carte__plate--selector {
+  -webkit-animation: apparition 300ms ease-in-out forwards;
+          animation: apparition 300ms ease-in-out forwards;
+}
+
+.carte__plate:active > .carte__plate--selector > i {
+  -webkit-animation: spin 500ms ease-in-out forwards;
+          animation: spin 500ms ease-in-out forwards;
+}
+
+.carte__plate:active > .carte__plate--price {
+  -webkit-animation: translation 300ms ease-in-out forwards;
+          animation: translation 300ms ease-in-out forwards;
 }
 
 .fonctionnement {
