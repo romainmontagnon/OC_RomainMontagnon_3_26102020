@@ -359,6 +359,9 @@ $size-loader:3rem;
     overflow: hidden;
     transform-origin: center right;
   }
+  &:hover, &:active{
+    cursor: pointer;
+  }
   &:hover > &--selector{
     animation: apparition 300ms ease-in-out forwards;
     >i{
@@ -379,14 +382,29 @@ $size-loader:3rem;
   }
 }
 
+@mixin delay-fade_in($time, $delay){
+  animation: fade_in $time ease-in $delay forwards;
+}
+
 .carte__fade-in{
-
+  .carte__plate{
+    opacity: 0;
+    &:nth-child(1){
+      @include delay-fade_in(1s, 300ms);
+    }
+    &:nth-child(2){
+      @include delay-fade_in(1s, 600ms);
+    }
+    &:nth-child(3){
+      @include delay-fade_in(1s, 1200ms);
+    }
+    &:nth-child(4){
+      @include delay-fade_in(1s, 1500ms);
+    }
+  }
 }
 
 
-@mixin delay-fade_in {
-  animation: fade_in 1s ease-in forwards;
-}
 
 .fonctionnement{
   margin-top: 3.25rem;

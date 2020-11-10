@@ -535,6 +535,10 @@ body {
           transform-origin: center right;
 }
 
+.carte__plate:hover, .carte__plate:active {
+  cursor: pointer;
+}
+
 .carte__plate:hover > .carte__plate--selector {
   -webkit-animation: apparition 300ms ease-in-out forwards;
           animation: apparition 300ms ease-in-out forwards;
@@ -563,6 +567,30 @@ body {
 .carte__plate:active > .carte__plate--price {
   -webkit-animation: translation 300ms ease-in-out forwards;
           animation: translation 300ms ease-in-out forwards;
+}
+
+.carte__fade-in .carte__plate {
+  opacity: 0;
+}
+
+.carte__fade-in .carte__plate:nth-child(1) {
+  -webkit-animation: fade_in 1s ease-in 300ms forwards;
+          animation: fade_in 1s ease-in 300ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(2) {
+  -webkit-animation: fade_in 1s ease-in 600ms forwards;
+          animation: fade_in 1s ease-in 600ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(3) {
+  -webkit-animation: fade_in 1s ease-in 1200ms forwards;
+          animation: fade_in 1s ease-in 1200ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(4) {
+  -webkit-animation: fade_in 1s ease-in 1500ms forwards;
+          animation: fade_in 1s ease-in 1500ms forwards;
 }
 
 .fonctionnement {
