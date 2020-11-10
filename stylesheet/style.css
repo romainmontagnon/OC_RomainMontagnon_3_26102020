@@ -846,7 +846,6 @@ footer div {
   .body {
     width: 320px;
     margin: auto;
-    cursor: pointer;
   }
 }
 
@@ -855,7 +854,6 @@ footer div {
   body {
     width: 768px;
     margin: auto;
-    cursor: pointer;
   }
   .logo {
     color: red;
