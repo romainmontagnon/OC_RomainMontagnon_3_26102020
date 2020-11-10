@@ -452,6 +452,12 @@ body {
       grid-template-columns: 85% 15%;
   -ms-grid-rows: 2.188rem 2.188rem;
       grid-template-rows: 2.188rem 2.188rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: fade-in 2s linear forwards;
+          animation: fade-in 2s linear forwards;
 }
 
 .carte__plate--title {

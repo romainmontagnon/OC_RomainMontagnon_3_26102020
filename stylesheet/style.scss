@@ -309,7 +309,8 @@ $size-loader:3rem;
   display: grid;
   grid-template-columns: 85% 15%;
   grid-template-rows: 2.188rem 2.188rem;
-  
+  user-select: none;
+  animation: fade-in 2s linear forwards;
   &--title{
     grid-row-start: 1;
     grid-column-start: 1;
@@ -376,6 +377,15 @@ $size-loader:3rem;
   &:active > &--price{
     animation: translation 300ms ease-in-out forwards;
   }
+}
+
+.carte__fade-in{
+
+}
+
+
+@mixin delay-fade_in {
+  animation: fade_in 1s ease-in forwards;
 }
 
 .fonctionnement{
