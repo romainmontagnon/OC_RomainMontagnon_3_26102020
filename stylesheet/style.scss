@@ -330,8 +330,8 @@ $size-loader:3rem;
     color: $color-plate-description;
     margin: 0rem 0rem 1rem 0rem;
     display: flex;
-    flex-wrap: nowrap;
     overflow: hidden;
+    white-space: nowrap;
   }
   &--price{
     grid-row-start: 2;
@@ -384,6 +384,12 @@ $size-loader:3rem;
   }
   &:active > &--price{
     animation: translation 300ms ease-in-out forwards;
+  }
+  &:hover > &--description{
+    background-color: green;
+  }
+  &:active > &--description{
+    background-color: green;
   }
 }
 

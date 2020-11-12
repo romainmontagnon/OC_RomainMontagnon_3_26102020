@@ -486,9 +486,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .carte__plate--price {
@@ -572,6 +571,10 @@ body {
 .carte__plate:active > .carte__plate--price {
   -webkit-animation: translation 300ms ease-in-out forwards;
           animation: translation 300ms ease-in-out forwards;
+}
+
+.carte__plate:hover > .carte__plate--description {
+  background-color: green;
 }
 
 .carte__fade-in--entrees .carte__plate, .carte__fade-in--entrees .carte__menu--header_fade {
