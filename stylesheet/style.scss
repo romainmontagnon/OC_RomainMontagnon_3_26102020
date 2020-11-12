@@ -157,13 +157,12 @@ $size-loader:3rem;
   }
 }
 
-
 //Loading Spinner
 .loader{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: $size-loader*4;
+    padding-top: $size-loader*5;
     position: absolute;
     left: 0;
     right: 0;
@@ -392,57 +391,67 @@ $size-loader:3rem;
 }
 
 .carte__fade-in{
-  .carte__plate, .carte__menu--header_fade{
+  &--entrees{
+    .carte__plate, .carte__menu--header_fade{
+      opacity: 0;
+      &:nth-child(1){
+        @include delay-fade_in(1s, 600ms);
+      }
+      &:nth-child(2){
+        @include delay-fade_in(1s, 1200ms);
+      }
+      &:nth-child(3){
+        @include delay-fade_in(1s, 1800ms);
+      }
+      &:nth-child(4){
+        @include delay-fade_in(1s, 2400ms);
+      }
+      &:nth-child(5){
+        @include delay-fade_in(1s, 3000ms);
+      }
+    }
+  }
+  &--plats{
+    .carte__plate, .carte__menu--header_fade{
     opacity: 0;
     &:nth-child(1){
-      @include delay-fade_in(1s, 600ms);
-    }
-    &:nth-child(2){
-      @include delay-fade_in(1s, 1200ms);
-    }
-    &:nth-child(3){
-      @include delay-fade_in(1s, 1800ms);
-    }
-    &:nth-child(4){
-      @include delay-fade_in(1s, 2400ms);
-    }
-    &:nth-child(5){
-      @include delay-fade_in(1s, 3000ms);
-    }
-    &:nth-child(6){
       @include delay-fade_in(1s, 3600ms);
     }
-    &:nth-child(7){
+    &:nth-child(2){
       @include delay-fade_in(1s, 4200ms);
     }
-    &:nth-child(8){
+    &:nth-child(3){
       @include delay-fade_in(1s, 4800ms);
     }
-    &:nth-child(9){
+    &:nth-child(4){
       @include delay-fade_in(1s, 5400ms);
     }
-    &:nth-child(10){
+    &:nth-child(5){
       @include delay-fade_in(1s, 6000ms);
     }
-    &:nth-child(11){
-      @include delay-fade_in(1s, 6600ms);
-    }
-    &:nth-child(12){
-      @include delay-fade_in(1s, 7200ms);
-    }
-    &:nth-child(13){
-      @include delay-fade_in(1s, 7800ms);
-    }
-    &:nth-child(14){
-      @include delay-fade_in(1s, 8400ms);
-    }
-    &:nth-child(15){
-      @include delay-fade_in(1s, 9000ms);
-    }
-  }  
+   }
+  }
+  &--desserts{
+    .carte__plate, .carte__menu--header_fade{
+      opacity: 0;
+      &:nth-child(1){
+        @include delay-fade_in(1s, 6600ms);
+      }
+      &:nth-child(2){
+        @include delay-fade_in(1s, 7200ms);
+      }
+      &:nth-child(3){
+        @include delay-fade_in(1s, 7800ms);
+      }
+      &:nth-child(4){
+        @include delay-fade_in(1s, 8400ms);
+      }
+      &:nth-child(5){
+        @include delay-fade_in(1s, 9000ms);
+      }
+    }  
+  }
 }
-
-
 
 .fonctionnement{
   margin-top: 3.25rem;
@@ -520,10 +529,12 @@ nav{
 
 .restaurants__details{
   width: 100%;
+  max-width: 20.938rem;
   height: 15.625rem;
   background-color: #fff;
   border-radius: 1.25rem;
   margin-bottom: 1.125rem;
+  box-shadow: 0rem 0.15rem 0.5rem$color-shadow-gray;
 }
 
 .restaurants__img{
@@ -681,6 +692,42 @@ footer{
   }
   .logo {
     color: red;
+  }
+  .fonctionnement{
+    width: 50%;
+    margin:auto;
+  }
+  .restaurants{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__details{
+      margin: 0rem 1rem 1rem 1rem;
+      width: 15.625rem;
+      height: 15.625rem;
+    }
+  }
+
+  .carte__fade-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+    grid-column-gap: 0.5rem;
+    grid-auto-flow: column;
+    &--entrees{
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+    &--plats{
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+    &--desserts{
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
   }
 }
 

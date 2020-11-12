@@ -245,7 +245,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12rem;
+  padding-top: 15rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -574,81 +574,89 @@ body {
           animation: translation 300ms ease-in-out forwards;
 }
 
-.carte__fade-in .carte__plate, .carte__fade-in .carte__menu--header_fade {
+.carte__fade-in--entrees .carte__plate, .carte__fade-in--entrees .carte__menu--header_fade {
   opacity: 0;
 }
 
-.carte__fade-in .carte__plate:nth-child(1), .carte__fade-in .carte__menu--header_fade:nth-child(1) {
+.carte__fade-in--entrees .carte__plate:nth-child(1), .carte__fade-in--entrees .carte__menu--header_fade:nth-child(1) {
   -webkit-animation: fade_in 1s ease-in 600ms forwards;
           animation: fade_in 1s ease-in 600ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(2), .carte__fade-in .carte__menu--header_fade:nth-child(2) {
+.carte__fade-in--entrees .carte__plate:nth-child(2), .carte__fade-in--entrees .carte__menu--header_fade:nth-child(2) {
   -webkit-animation: fade_in 1s ease-in 1200ms forwards;
           animation: fade_in 1s ease-in 1200ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(3), .carte__fade-in .carte__menu--header_fade:nth-child(3) {
+.carte__fade-in--entrees .carte__plate:nth-child(3), .carte__fade-in--entrees .carte__menu--header_fade:nth-child(3) {
   -webkit-animation: fade_in 1s ease-in 1800ms forwards;
           animation: fade_in 1s ease-in 1800ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(4), .carte__fade-in .carte__menu--header_fade:nth-child(4) {
+.carte__fade-in--entrees .carte__plate:nth-child(4), .carte__fade-in--entrees .carte__menu--header_fade:nth-child(4) {
   -webkit-animation: fade_in 1s ease-in 2400ms forwards;
           animation: fade_in 1s ease-in 2400ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(5), .carte__fade-in .carte__menu--header_fade:nth-child(5) {
+.carte__fade-in--entrees .carte__plate:nth-child(5), .carte__fade-in--entrees .carte__menu--header_fade:nth-child(5) {
   -webkit-animation: fade_in 1s ease-in 3000ms forwards;
           animation: fade_in 1s ease-in 3000ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(6), .carte__fade-in .carte__menu--header_fade:nth-child(6) {
+.carte__fade-in--plats .carte__plate, .carte__fade-in--plats .carte__menu--header_fade {
+  opacity: 0;
+}
+
+.carte__fade-in--plats .carte__plate:nth-child(1), .carte__fade-in--plats .carte__menu--header_fade:nth-child(1) {
   -webkit-animation: fade_in 1s ease-in 3600ms forwards;
           animation: fade_in 1s ease-in 3600ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(7), .carte__fade-in .carte__menu--header_fade:nth-child(7) {
+.carte__fade-in--plats .carte__plate:nth-child(2), .carte__fade-in--plats .carte__menu--header_fade:nth-child(2) {
   -webkit-animation: fade_in 1s ease-in 4200ms forwards;
           animation: fade_in 1s ease-in 4200ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(8), .carte__fade-in .carte__menu--header_fade:nth-child(8) {
+.carte__fade-in--plats .carte__plate:nth-child(3), .carte__fade-in--plats .carte__menu--header_fade:nth-child(3) {
   -webkit-animation: fade_in 1s ease-in 4800ms forwards;
           animation: fade_in 1s ease-in 4800ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(9), .carte__fade-in .carte__menu--header_fade:nth-child(9) {
+.carte__fade-in--plats .carte__plate:nth-child(4), .carte__fade-in--plats .carte__menu--header_fade:nth-child(4) {
   -webkit-animation: fade_in 1s ease-in 5400ms forwards;
           animation: fade_in 1s ease-in 5400ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(10), .carte__fade-in .carte__menu--header_fade:nth-child(10) {
+.carte__fade-in--plats .carte__plate:nth-child(5), .carte__fade-in--plats .carte__menu--header_fade:nth-child(5) {
   -webkit-animation: fade_in 1s ease-in 6000ms forwards;
           animation: fade_in 1s ease-in 6000ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(11), .carte__fade-in .carte__menu--header_fade:nth-child(11) {
+.carte__fade-in--desserts .carte__plate, .carte__fade-in--desserts .carte__menu--header_fade {
+  opacity: 0;
+}
+
+.carte__fade-in--desserts .carte__plate:nth-child(1), .carte__fade-in--desserts .carte__menu--header_fade:nth-child(1) {
   -webkit-animation: fade_in 1s ease-in 6600ms forwards;
           animation: fade_in 1s ease-in 6600ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(12), .carte__fade-in .carte__menu--header_fade:nth-child(12) {
+.carte__fade-in--desserts .carte__plate:nth-child(2), .carte__fade-in--desserts .carte__menu--header_fade:nth-child(2) {
   -webkit-animation: fade_in 1s ease-in 7200ms forwards;
           animation: fade_in 1s ease-in 7200ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(13), .carte__fade-in .carte__menu--header_fade:nth-child(13) {
+.carte__fade-in--desserts .carte__plate:nth-child(3), .carte__fade-in--desserts .carte__menu--header_fade:nth-child(3) {
   -webkit-animation: fade_in 1s ease-in 7800ms forwards;
           animation: fade_in 1s ease-in 7800ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(14), .carte__fade-in .carte__menu--header_fade:nth-child(14) {
+.carte__fade-in--desserts .carte__plate:nth-child(4), .carte__fade-in--desserts .carte__menu--header_fade:nth-child(4) {
   -webkit-animation: fade_in 1s ease-in 8400ms forwards;
           animation: fade_in 1s ease-in 8400ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(15), .carte__fade-in .carte__menu--header_fade:nth-child(15) {
+.carte__fade-in--desserts .carte__plate:nth-child(5), .carte__fade-in--desserts .carte__menu--header_fade:nth-child(5) {
   -webkit-animation: fade_in 1s ease-in 9000ms forwards;
           animation: fade_in 1s ease-in 9000ms forwards;
 }
@@ -762,10 +770,13 @@ nav h2 {
 
 .restaurants__details {
   width: 100%;
+  max-width: 20.938rem;
   height: 15.625rem;
   background-color: #fff;
   border-radius: 1.25rem;
   margin-bottom: 1.125rem;
+  -webkit-box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+          box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
 }
 
 .restaurants__img {
@@ -963,6 +974,60 @@ footer div {
   }
   .logo {
     color: red;
+  }
+  .fonctionnement {
+    width: 50%;
+    margin: auto;
+  }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .restaurants__details {
+    margin: 0rem 1rem 1rem 1rem;
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  .carte__fade-in {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+        grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+    grid-column-gap: 0.5rem;
+    grid-auto-flow: column;
+  }
+  .carte__fade-in--entrees {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .carte__fade-in--plats {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .carte__fade-in--desserts {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
   }
 }
 
