@@ -713,7 +713,8 @@ footer{
   .carte__fade-in{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+    // grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+    grid-template-rows: 1fr;
     grid-column-gap: 0.5rem;
     grid-auto-flow: column;
     &--entrees{
@@ -739,5 +740,41 @@ footer{
   }
   .logo {
     color: green;
+  }
+  .fonctionnement{
+    width: 38%;
+    margin:auto;
+  }
+  .restaurants{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__details{
+      margin: 0rem 1rem 1rem 1rem;
+      width: 15.625rem;
+      height: 15.625rem;
+    }
+  }
+
+  .carte__fade-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
+    grid-column-gap: 2rem;
+    grid-auto-flow: column;
+    &--entrees{
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+    &--plats{
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+    &--desserts{
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
   }
 }
