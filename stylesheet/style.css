@@ -383,8 +383,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 13.75rem 2.5rem 1fr;
-      grid-template-rows: 13.75rem 2.5rem 1fr;
+  -ms-grid-rows: 16.25rem 2.5rem 1fr;
+      grid-template-rows: 16.25rem 2.5rem 1fr;
 }
 
 .carte__header {
@@ -975,6 +975,36 @@ footer div {
   .logo {
     color: red;
   }
+  .carte {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 25.813rem 2.5rem 1fr;
+        grid-template-rows: 25.813rem 2.5rem 1fr;
+  }
+  .carte__header {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    overflow: hidden;
+  }
+  .carte__header--img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 100%;
+  }
+  .restaurants__img {
+    width: 100%;
+    height: 25.813rem;
+    overflow: hidden;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+  }
   .fonctionnement {
     width: 50%;
     margin: auto;
@@ -1044,27 +1074,29 @@ footer div {
     width: 38%;
     margin: auto;
   }
-  .restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .carte {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 34.375rem 2.5rem 1fr;
+        grid-template-rows: 34.375rem 2.5rem 1fr;
   }
-  .restaurants__details {
-    margin: 0rem 1rem 1rem 1rem;
-    width: 15.625rem;
-    height: 15.625rem;
+  .carte__header {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    overflow: hidden;
+  }
+  .carte__header--img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 100%;
   }
   .carte__fade-in {
     display: -ms-grid;
