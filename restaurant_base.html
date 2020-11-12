@@ -8,6 +8,13 @@
         <link rel="stylesheet" href="stylesheet/style.css">
         <!-- Integration de Fontawesome -->
         <script src="https://kit.fontawesome.com/844f2c68d0.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+            if(/iP(hone|ad)/.test(window.navigator.userAgent)) {
+                document.body.addEventListener('touchstart', function() {}, false);
+            }
+            };
+        </script>
     </head>
 
     <body ontouchstart="touchStart(:active)">
