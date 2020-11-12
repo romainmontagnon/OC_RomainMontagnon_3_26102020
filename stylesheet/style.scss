@@ -565,6 +565,15 @@ nav{
   &:active + label{
     transform: scale(1.25);
   }
+  &:not(:checked) + label{
+    color: #000;
+    .icon__restaurants--empty{
+      opacity: 1;
+    }
+    .icon__restaurants--full{
+      opacity: 0;
+    }
+  }
 }
 
 .checkmark{
