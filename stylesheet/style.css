@@ -813,18 +813,6 @@ nav h2 {
           transform: scale(1.25);
 }
 
-.checkbox:not(:checked) + label {
-  color: #000;
-}
-
-.checkbox:not(:checked) + label .icon__restaurants--empty {
-  opacity: 1;
-}
-
-.checkbox:not(:checked) + label .icon__restaurants--full {
-  opacity: 0;
-}
-
 .checkmark {
   cursor: copy;
   height: auto;
