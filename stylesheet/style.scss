@@ -135,6 +135,28 @@ $size-loader:3rem;
   }
 }
 
+.btn{
+  display: flex;
+  justify-content: center;
+  
+  >a{
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
+    color: #fff;
+    background: linear-gradient(180deg, $color-second,  $color-first);
+    box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
+    p{
+      font-size: 0.75rem;
+      margin: 1.25em 1.438rem;
+      font-weight: 500;
+    }
+  }
+  &__commande{
+    margin-top: 2.25rem;
+    margin-bottom: 5.188rem;
+  }
+}
+
 
 //Loading Spinner
 .loader{
@@ -230,23 +252,6 @@ $size-loader:3rem;
     font-weight: 300;
     text-align: center;
     margin: 1.25rem 2.5rem 2.5rem 1.938rem;
-  }
-}
-
-.explore{
-  display: flex;
-  justify-content: center;
-  >a{
-    border-radius: 1.25rem;
-    font-size: 0.75rem;
-    color: #fff;
-    background: linear-gradient(180deg, $color-second,  $color-first);
-    box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
-    p{
-      font-size: 0.75rem;
-      margin: 1.25em 1.438rem;
-      font-weight: 500;
-    }
   }
 }
 

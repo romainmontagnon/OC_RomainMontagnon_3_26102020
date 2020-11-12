@@ -204,6 +204,36 @@ body {
   }
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn > a {
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  -webkit-box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+          box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+}
+
+.btn > a p {
+  font-size: 0.75rem;
+  margin: 1.25em 1.438rem;
+  font-weight: 500;
+}
+
+.btn__commande {
+  margin-top: 2.25rem;
+  margin-bottom: 5.188rem;
+}
+
 .loader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,31 +371,6 @@ body {
   font-weight: 300;
   text-align: center;
   margin: 1.25rem 2.5rem 2.5rem 1.938rem;
-}
-
-.explore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.explore > a {
-  border-radius: 1.25rem;
-  font-size: 0.75rem;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(180deg, #ff79da, #9356dc);
-  -webkit-box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
-          box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
-}
-
-.explore > a p {
-  font-size: 0.75rem;
-  margin: 1.25em 1.438rem;
-  font-weight: 500;
 }
 
 .main__margin {
