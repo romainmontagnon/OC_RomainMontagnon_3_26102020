@@ -569,28 +569,83 @@ body {
           animation: translation 300ms ease-in-out forwards;
 }
 
-.carte__fade-in .carte__plate {
+.carte__fade-in .carte__plate, .carte__fade-in .carte__menu--header_fade {
   opacity: 0;
 }
 
-.carte__fade-in .carte__plate:nth-child(1) {
-  -webkit-animation: fade_in 1s ease-in 300ms forwards;
-          animation: fade_in 1s ease-in 300ms forwards;
-}
-
-.carte__fade-in .carte__plate:nth-child(2) {
+.carte__fade-in .carte__plate:nth-child(1), .carte__fade-in .carte__menu--header_fade:nth-child(1) {
   -webkit-animation: fade_in 1s ease-in 600ms forwards;
           animation: fade_in 1s ease-in 600ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(3) {
+.carte__fade-in .carte__plate:nth-child(2), .carte__fade-in .carte__menu--header_fade:nth-child(2) {
   -webkit-animation: fade_in 1s ease-in 1200ms forwards;
           animation: fade_in 1s ease-in 1200ms forwards;
 }
 
-.carte__fade-in .carte__plate:nth-child(4) {
-  -webkit-animation: fade_in 1s ease-in 1500ms forwards;
-          animation: fade_in 1s ease-in 1500ms forwards;
+.carte__fade-in .carte__plate:nth-child(3), .carte__fade-in .carte__menu--header_fade:nth-child(3) {
+  -webkit-animation: fade_in 1s ease-in 1800ms forwards;
+          animation: fade_in 1s ease-in 1800ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(4), .carte__fade-in .carte__menu--header_fade:nth-child(4) {
+  -webkit-animation: fade_in 1s ease-in 2400ms forwards;
+          animation: fade_in 1s ease-in 2400ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(5), .carte__fade-in .carte__menu--header_fade:nth-child(5) {
+  -webkit-animation: fade_in 1s ease-in 3000ms forwards;
+          animation: fade_in 1s ease-in 3000ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(6), .carte__fade-in .carte__menu--header_fade:nth-child(6) {
+  -webkit-animation: fade_in 1s ease-in 3600ms forwards;
+          animation: fade_in 1s ease-in 3600ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(7), .carte__fade-in .carte__menu--header_fade:nth-child(7) {
+  -webkit-animation: fade_in 1s ease-in 4200ms forwards;
+          animation: fade_in 1s ease-in 4200ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(8), .carte__fade-in .carte__menu--header_fade:nth-child(8) {
+  -webkit-animation: fade_in 1s ease-in 4800ms forwards;
+          animation: fade_in 1s ease-in 4800ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(9), .carte__fade-in .carte__menu--header_fade:nth-child(9) {
+  -webkit-animation: fade_in 1s ease-in 5400ms forwards;
+          animation: fade_in 1s ease-in 5400ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(10), .carte__fade-in .carte__menu--header_fade:nth-child(10) {
+  -webkit-animation: fade_in 1s ease-in 6000ms forwards;
+          animation: fade_in 1s ease-in 6000ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(11), .carte__fade-in .carte__menu--header_fade:nth-child(11) {
+  -webkit-animation: fade_in 1s ease-in 6600ms forwards;
+          animation: fade_in 1s ease-in 6600ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(12), .carte__fade-in .carte__menu--header_fade:nth-child(12) {
+  -webkit-animation: fade_in 1s ease-in 7200ms forwards;
+          animation: fade_in 1s ease-in 7200ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(13), .carte__fade-in .carte__menu--header_fade:nth-child(13) {
+  -webkit-animation: fade_in 1s ease-in 7800ms forwards;
+          animation: fade_in 1s ease-in 7800ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(14), .carte__fade-in .carte__menu--header_fade:nth-child(14) {
+  -webkit-animation: fade_in 1s ease-in 8400ms forwards;
+          animation: fade_in 1s ease-in 8400ms forwards;
+}
+
+.carte__fade-in .carte__plate:nth-child(15), .carte__fade-in .carte__menu--header_fade:nth-child(15) {
+  -webkit-animation: fade_in 1s ease-in 9000ms forwards;
+          animation: fade_in 1s ease-in 9000ms forwards;
 }
 
 .fonctionnement {
@@ -811,6 +866,18 @@ nav h2 {
 .checkbox:active + label {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+}
+
+.checkbox:not(:checked) + label {
+  color: #000;
+}
+
+.checkbox:not(:checked) + label .icon__restaurants--empty {
+  opacity: 1;
+}
+
+.checkbox:not(:checked) + label .icon__restaurants--full {
+  opacity: 0;
 }
 
 .checkmark {

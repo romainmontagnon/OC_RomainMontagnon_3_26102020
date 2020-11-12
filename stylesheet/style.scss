@@ -387,21 +387,54 @@ $size-loader:3rem;
 }
 
 .carte__fade-in{
-  .carte__plate{
+  .carte__plate, .carte__menu--header_fade{
     opacity: 0;
     &:nth-child(1){
-      @include delay-fade_in(1s, 300ms);
-    }
-    &:nth-child(2){
       @include delay-fade_in(1s, 600ms);
     }
-    &:nth-child(3){
+    &:nth-child(2){
       @include delay-fade_in(1s, 1200ms);
     }
-    &:nth-child(4){
-      @include delay-fade_in(1s, 1500ms);
+    &:nth-child(3){
+      @include delay-fade_in(1s, 1800ms);
     }
-  }
+    &:nth-child(4){
+      @include delay-fade_in(1s, 2400ms);
+    }
+    &:nth-child(5){
+      @include delay-fade_in(1s, 3000ms);
+    }
+    &:nth-child(6){
+      @include delay-fade_in(1s, 3600ms);
+    }
+    &:nth-child(7){
+      @include delay-fade_in(1s, 4200ms);
+    }
+    &:nth-child(8){
+      @include delay-fade_in(1s, 4800ms);
+    }
+    &:nth-child(9){
+      @include delay-fade_in(1s, 5400ms);
+    }
+    &:nth-child(10){
+      @include delay-fade_in(1s, 6000ms);
+    }
+    &:nth-child(11){
+      @include delay-fade_in(1s, 6600ms);
+    }
+    &:nth-child(12){
+      @include delay-fade_in(1s, 7200ms);
+    }
+    &:nth-child(13){
+      @include delay-fade_in(1s, 7800ms);
+    }
+    &:nth-child(14){
+      @include delay-fade_in(1s, 8400ms);
+    }
+    &:nth-child(15){
+      @include delay-fade_in(1s, 9000ms);
+    }
+  }  
 }
 
 
