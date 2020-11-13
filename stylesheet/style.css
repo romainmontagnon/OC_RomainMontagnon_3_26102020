@@ -926,6 +926,14 @@ nav h2 {
   color: #000;
 }
 
+.restaurants__text div:first-child {
+  width: 100%;
+}
+
+.restaurants__text div:first-child a:visited {
+  color: #000;
+}
+
 .restaurants__text--title {
   margin: 1.25rem 0rem 0rem 0.875rem;
 }

@@ -621,6 +621,12 @@ nav{
   justify-content: space-between;
   align-items: center;
   color: #000;
+  div:first-child{
+    width: 100%;
+    a:visited{
+      color: #000;
+    }
+  }
   &--title{
     margin: 1.25rem 0rem 0rem 0.875rem;
   }
