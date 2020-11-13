@@ -151,26 +151,43 @@ $size-loader:3rem;
   }
 }
 
+@keyframes fade_in_ico{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.3;
+  }
+  100%{
+      opacity: 0.6;
+  }
+}
+
 .btn{
   display: flex;
   justify-content: center;
-  
   >a{
     border-radius: 1.25rem;
     font-size: 0.75rem;
     color: #fff;
     background: linear-gradient(180deg, $color-second,  $color-first);
     box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
+    transform: scale(1);
+    transition: transform 300ms ease-in;
     p{
       font-size: 0.75rem;
       margin: 1.25em 1.438rem;
       font-weight: 500;
+    }
+    &:hover, &:active{
+      transform: scale(1.05);
     }
   }
   &__commande{
     margin-top: 2.25rem;
     margin-bottom: 5.188rem;
   }
+  
 }
 
 //Loading Spinner
@@ -614,7 +631,6 @@ nav{
 }
 
 .icon__restaurants--empty{
-  //padding-right: 1.5rem;
   font-size: 1.375rem;
   cursor: copy;
 }
@@ -634,11 +650,17 @@ nav{
   opacity: 0;
   height: 0;
   width: 0;
+  +label{
+    transform: scale(1);
+  transition: transform 150ms ease-in;
+  }
+  
   &:hover + label{
-    color: $color-first;
     transform: scale(1.15);
     .icon__restaurants--empty{
       opacity: 1;
+      color:lighten(#000,30%);
+      text-shadow: 0.15rem 0.15rem 0.1rem $color-shadow-gray;
     }
     .icon__restaurants--full{
       opacity: 0.5;
@@ -646,15 +668,22 @@ nav{
   }
   &:checked + label{
     color: $color-first;
+    .icon__restaurants--full{
+    animation: fade_in_ico 300ms ease-in forwards;}
     .icon__restaurants--empty{
       opacity: 1;
+    }
+  }
+  &:active + label{
+    transform: scale(1.15);
+    .icon__restaurants--empty{
+      opacity: 1;
+      color:lighten(#000,30%);
+      text-shadow: 0.15rem 0.15rem 0.1rem $color-shadow-gray;
     }
     .icon__restaurants--full{
       opacity: 0.5;
     }
-  }
-  &:active + label{
-    transform: scale(1.25);
   }
   &:not(:checked) + label{
     color: #000;

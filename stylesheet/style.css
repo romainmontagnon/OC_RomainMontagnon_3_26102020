@@ -238,6 +238,30 @@ body {
   }
 }
 
+@-webkit-keyframes fade_in_ico {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fade_in_ico {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,12 +279,23 @@ body {
   background: linear-gradient(180deg, #ff79da, #9356dc);
   -webkit-box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
           box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
 
 .btn > a p {
   font-size: 0.75rem;
   margin: 1.25em 1.438rem;
   font-weight: 500;
+}
+
+.btn > a:hover, .btn > a:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .btn__commande {
@@ -921,14 +956,24 @@ nav h2 {
   width: 0;
 }
 
+.checkbox + label {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 150ms ease-in;
+  transition: -webkit-transform 150ms ease-in;
+  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
+}
+
 .checkbox:hover + label {
-  color: #9356dc;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
 
 .checkbox:hover + label .icon__restaurants--empty {
   opacity: 1;
+  color: #4d4d4d;
+  text-shadow: 0.15rem 0.15rem 0.1rem #aaaaaa;
 }
 
 .checkbox:hover + label .icon__restaurants--full {
@@ -939,17 +984,28 @@ nav h2 {
   color: #9356dc;
 }
 
+.checkbox:checked + label .icon__restaurants--full {
+  -webkit-animation: fade_in_ico 300ms ease-in forwards;
+          animation: fade_in_ico 300ms ease-in forwards;
+}
+
 .checkbox:checked + label .icon__restaurants--empty {
   opacity: 1;
 }
 
-.checkbox:checked + label .icon__restaurants--full {
-  opacity: 0.5;
+.checkbox:active + label {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
-.checkbox:active + label {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+.checkbox:active + label .icon__restaurants--empty {
+  opacity: 1;
+  color: #4d4d4d;
+  text-shadow: 0.15rem 0.15rem 0.1rem #aaaaaa;
+}
+
+.checkbox:active + label .icon__restaurants--full {
+  opacity: 0.5;
 }
 
 .checkbox:not(:checked) + label {
