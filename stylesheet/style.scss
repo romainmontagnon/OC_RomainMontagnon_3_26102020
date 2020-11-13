@@ -52,6 +52,9 @@ $color-medium-gray: #f6f6f6;
 $color-dark-gray: #707070;
 $color-shadow-gray: #aaaaaa;
 
+$color-btn-nouveau-background:#99e2d0;
+$color-btn-nouveau-text:#008766;
+
 $color-price: #353535;
 $color-plate-description:#202020;
 
@@ -557,6 +560,24 @@ nav{
   margin-bottom: 1.125rem;
   box-shadow: 0rem 0.15rem 0.5rem$color-shadow-gray;
 }
+.btn__nouveau{
+  // margin: 0rem 0rem;
+  width: 5rem;
+  height: 1.875rem;
+  position: relative;
+  top: -90%;
+  right: -70%;
+  background-color: $color-btn-nouveau-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  p{
+    color: $color-btn-nouveau-text;
+    font-size: 0.563rem;
+    font-weight: 500;
+  }
+}
 
 .restaurants__img{
   width: 100%;
@@ -738,16 +759,17 @@ footer{
     }
   }
 
+  .fonctionnement{
+    width: 50%;
+    margin:auto;
+  }
+
   .restaurants__img{
     width: 100%;
     overflow: hidden;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
   }
 
-  .fonctionnement{
-    width: 50%;
-    margin:auto;
-  }
   .restaurants{
     display: flex;
     flex-direction: row;
@@ -760,7 +782,9 @@ footer{
       height: 15.625rem;
     }
   }
-
+  .btn__nouveau{
+    right: -60%;
+  }
   .carte__fade-in{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -822,6 +822,31 @@ nav h2 {
           box-shadow: 0rem 0.15rem 0.5rem #aaaaaa;
 }
 
+.btn__nouveau {
+  width: 5rem;
+  height: 1.875rem;
+  position: relative;
+  top: -90%;
+  right: -70%;
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.9;
+}
+
+.btn__nouveau p {
+  color: #008766;
+  font-size: 0.563rem;
+  font-weight: 500;
+}
+
 .restaurants__img {
   width: 100%;
   height: 10.938rem;
@@ -1048,14 +1073,14 @@ footer div {
             box-sizing: content-box;
     width: 100%;
   }
+  .fonctionnement {
+    width: 50%;
+    margin: auto;
+  }
   .restaurants__img {
     width: 100%;
     overflow: hidden;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
-  }
-  .fonctionnement {
-    width: 50%;
-    margin: auto;
   }
   .restaurants {
     display: -webkit-box;
@@ -1078,6 +1103,9 @@ footer div {
     margin: 0rem 1rem 1rem 1rem;
     width: 15.625rem;
     height: 15.625rem;
+  }
+  .btn__nouveau {
+    right: -60%;
   }
   .carte__fade-in {
     display: -ms-grid;
