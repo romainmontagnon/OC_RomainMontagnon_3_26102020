@@ -506,7 +506,7 @@ $size-loader:3rem;
     flex-direction: row;
     align-items: center;
     font-size: 0.813rem;
-    font-weight: 500rem;
+    font-weight: 500;
     margin-top: 1.25rem;
   }
   &__border{
@@ -536,7 +536,7 @@ $size-loader:3rem;
   }
   &__texte{
     font-size: 0.813rem;
-    font-weight: 500rem;
+    font-weight: 500;
   }
 }
 
@@ -626,7 +626,7 @@ nav{
   }
   &--description{
     margin: 0.625rem 0rem 0rem 0.875rem;
-    font-size: 0.813;
+    font-size: 0.813rem;
     font-weight: 300;
   }
   >div{

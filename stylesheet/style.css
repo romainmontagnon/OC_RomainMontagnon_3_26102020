@@ -760,7 +760,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.813rem;
-  font-weight: 500rem;
+  font-weight: 500;
   margin-top: 1.25rem;
 }
 
@@ -808,7 +808,7 @@ body {
 
 .fonctionnement__texte {
   font-size: 0.813rem;
-  font-weight: 500rem;
+  font-weight: 500;
 }
 
 .icon--fonctionnement {
@@ -932,7 +932,7 @@ nav h2 {
 
 .restaurants__text--description {
   margin: 0.625rem 0rem 0rem 0.875rem;
-  font-size: 0.813;
+  font-size: 0.813rem;
   font-weight: 300;
 }
 
