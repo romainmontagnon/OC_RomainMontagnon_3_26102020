@@ -98,6 +98,19 @@ $size-loader:3rem;
   }
 }
 
+@keyframes reduction{
+  0%{
+    transform-origin: center left;
+    width: 100%;
+    transition: width;
+  }
+  100%{
+    transform-origin: center left;
+    width: 85%;
+    transition: width;
+  }
+}
+
 @keyframes color {
   0%{
       color: $color-medium-gray;
@@ -316,6 +329,7 @@ $size-loader:3rem;
   grid-template-rows: 2.188rem 2.188rem;
   user-select: none;
   animation: fade-in 2s linear forwards;
+  box-shadow: 0rem 0.15rem 0.5rem $color-shadow-gray;
   &--title{
     grid-row-start: 1;
     grid-column-start: 1;
@@ -329,9 +343,10 @@ $size-loader:3rem;
     font-size: 0.688rem;
     color: $color-plate-description;
     margin: 0rem 0rem 1rem 0rem;
-    display: flex;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    //width: 100%;
   }
   &--price{
     grid-row-start: 2;
@@ -345,7 +360,6 @@ $size-loader:3rem;
     transform: translateX(0%)
     }
   &--selector{
-    // display: none;
     grid-row-start: 1;
     grid-row-end: span 2 ;
     grid-column-start: 2;
@@ -386,10 +400,10 @@ $size-loader:3rem;
     animation: translation 300ms ease-in-out forwards;
   }
   &:hover > &--description{
-    background-color: green;
+    animation: reduction 300ms ease-in-out forwards;
   }
   &:active > &--description{
-    background-color: green;
+    animation: reduction 300ms ease-in-out forwards;
   }
 }
 
@@ -696,9 +710,15 @@ footer{
   body{
     width: 768px;
     margin: auto;
+    background-color: $color-light-gray;
   }
   .logo {
-    color: red;
+    background-color: #fff;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
+  }
+  .logo__restaurants {
+    background-color: #fff;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
   }
 
   .carte{
@@ -720,7 +740,6 @@ footer{
 
   .restaurants__img{
     width: 100%;
-    height: 25.813rem;
     overflow: hidden;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
   }
@@ -745,7 +764,6 @@ footer{
   .carte__fade-in{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem 4.375rem;
     grid-template-rows: 1fr;
     grid-column-gap: 0.5rem;
     grid-auto-flow: column;
@@ -762,6 +780,9 @@ footer{
       grid-column-start: 3;
     }
   }
+  footer{
+    border-radius: 0rem 0rem 1.875rem 1.875rem;
+  }
 }
 
 /* Desktop */
@@ -769,13 +790,34 @@ footer{
   body{
     width: 1024px;
     margin: auto;
+    background-color: $color-light-gray;
   }
+
+  #body__background-resp--index{
+    background-color: #fff;
+  }
+
   .logo {
-    color: green;
+    background-color: #fff;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
   }
+
+  .logo__restaurants {
+    background-color: #fff;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
+  }
+
   .fonctionnement{
     width: 38%;
     margin:auto;
+  }
+
+  .restaurants{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .carte{
@@ -813,5 +855,8 @@ footer{
       grid-row-start: 1;
       grid-column-start: 3;
     }
+  }
+  footer{
+    border-radius: 0rem 0rem 1.875rem 1.875rem;
   }
 }
