@@ -436,19 +436,19 @@ $size-loader:3rem;
     .carte__plate, .carte__menu--header_fade{
       opacity: 0;
       &:nth-child(1){
-        @include delay-fade_in(1s, 600ms);
+        @include delay-fade_in(1s, 300ms);
       }
       &:nth-child(2){
-        @include delay-fade_in(1s, 1200ms);
+        @include delay-fade_in(1s, 600ms);
       }
       &:nth-child(3){
-        @include delay-fade_in(1s, 1800ms);
+        @include delay-fade_in(1s, 900ms);
       }
       &:nth-child(4){
-        @include delay-fade_in(1s, 2400ms);
+        @include delay-fade_in(1s, 1200ms);
       }
       &:nth-child(5){
-        @include delay-fade_in(1s, 3000ms);
+        @include delay-fade_in(1s, 1500ms);
       }
     }
   }
@@ -456,19 +456,19 @@ $size-loader:3rem;
     .carte__plate, .carte__menu--header_fade{
     opacity: 0;
     &:nth-child(1){
-      @include delay-fade_in(1s, 3600ms);
+      @include delay-fade_in(1s, 1800ms);
     }
     &:nth-child(2){
-      @include delay-fade_in(1s, 4200ms);
+      @include delay-fade_in(1s, 2100ms);
     }
     &:nth-child(3){
-      @include delay-fade_in(1s, 4800ms);
+      @include delay-fade_in(1s, 2400ms);
     }
     &:nth-child(4){
-      @include delay-fade_in(1s, 5400ms);
+      @include delay-fade_in(1s, 2700ms);
     }
     &:nth-child(5){
-      @include delay-fade_in(1s, 6000ms);
+      @include delay-fade_in(1s, 3000ms);
     }
    }
   }
@@ -476,19 +476,19 @@ $size-loader:3rem;
     .carte__plate, .carte__menu--header_fade{
       opacity: 0;
       &:nth-child(1){
-        @include delay-fade_in(1s, 6600ms);
+        @include delay-fade_in(1s, 3300ms);
       }
       &:nth-child(2){
-        @include delay-fade_in(1s, 7200ms);
+        @include delay-fade_in(1s, 3600ms);
       }
       &:nth-child(3){
-        @include delay-fade_in(1s, 7800ms);
+        @include delay-fade_in(1s, 3900ms);
       }
       &:nth-child(4){
-        @include delay-fade_in(1s, 8400ms);
+        @include delay-fade_in(1s, 4200ms);
       }
       &:nth-child(5){
-        @include delay-fade_in(1s, 9000ms);
+        @include delay-fade_in(1s, 4500ms);
       }
     }  
   }
@@ -593,6 +593,11 @@ nav{
     color: $color-btn-nouveau-text;
     font-size: 0.563rem;
     font-weight: 500;
+  }
+  transform: scale(1);
+  transition: transform 300ms ease-in;
+  &:hover, &:active{
+    transform: scale(1.10);
   }
 }
 
