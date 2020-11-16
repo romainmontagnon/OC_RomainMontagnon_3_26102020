@@ -26,12 +26,9 @@ h4 {
   font-size: 0.875rem;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
+  color: #000;
 }
 
 body {
@@ -862,7 +859,7 @@ nav h2 {
   height: 1.875rem;
   position: relative;
   top: -90%;
-  right: -70%;
+  right: -67%;
   background-color: #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;

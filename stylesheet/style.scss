@@ -27,11 +27,9 @@ h4{
   font-size: 0.875rem;
 }
 
-a{
+a, a:visited{
   text-decoration: none;
-  &:visited{
-  text-decoration: none;
-  }
+  color: #000;
 }
 
 body{
@@ -583,7 +581,7 @@ nav{
   height: 1.875rem;
   position: relative;
   top: -90%;
-  right: -70%;
+  right: -67%;
   background-color: $color-btn-nouveau-background;
   display: flex;
   justify-content: center;
