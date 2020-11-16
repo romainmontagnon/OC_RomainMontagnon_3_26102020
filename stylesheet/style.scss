@@ -161,6 +161,11 @@ $size-loader:3rem;
   }
 }
 
+//Mixin
+@mixin delay-fade_in($time, $delay){
+  animation: fade_in $time ease-in $delay forwards;
+}
+
 .btn{
   display: flex;
   justify-content: center;
@@ -185,7 +190,6 @@ $size-loader:3rem;
     margin-top: 2.25rem;
     margin-bottom: 5.188rem;
   }
-  
 }
 
 //Loading Spinner
@@ -214,7 +218,7 @@ $size-loader:3rem;
     padding-top: $size-border;
     color: $color-footer;
     animation: color 3s ease-in-out infinite;
-}
+  }
 }
 
 .main__fade-in{
@@ -423,10 +427,6 @@ $size-loader:3rem;
   &:active > &--description{
     animation: reduction 300ms ease-in-out forwards;
   }
-}
-
-@mixin delay-fade_in($time, $delay){
-  animation: fade_in $time ease-in $delay forwards;
 }
 
 .carte__fade-in{
